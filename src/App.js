@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import CustomSelect from "./components/CustomSelect";
 
-function App() {
+const App = () => {
+  const options = ['First', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>Multi-select dropdown:</h2>
+      <CustomSelect options={options} multiSelect={true}/>
+      <h2>Single-select dropdown:</h2>
+      <CustomSelect options={options} multiSelect={false}/>
     </div>
   );
-}
+};
 
 export default App;
+
