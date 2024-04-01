@@ -1,3 +1,8 @@
+# CustomSelect Component
+
+CustomSelect is a reusable React component that provides dropdown functionality, supporting both single-select and multi-select options. It utilizes styled-components for styling and includes icons from react-icons library.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
